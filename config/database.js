@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI || mongodb+srv://yashsajwan2004:ymMpYKQRCFgkrXP0@cluster0.rxufseg.mongodb.net/, {
+    const conn = await mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://yashsajwan2004:ymMpYKQRCFgkrXP0@cluster0.rxufseg.mongodb.net/", {
       dbName: 'rewear',
     });
 
