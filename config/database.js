@@ -2,10 +2,8 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect(process.env.MONGODB_URI, {
+    const conn = await mongoose.connect(process.env.MONGODB_URI || mongodb+srv://yashsajwan2004:ymMpYKQRCFgkrXP0@cluster0.rxufseg.mongodb.net/, {
       dbName: 'rewear',
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
     });
 
     console.log(`MongoDB Connected: ${conn.connection.host}`);
