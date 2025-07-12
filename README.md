@@ -171,15 +171,14 @@ After running the initialization script, these users are created:
 
 ### Admin User
 - **Email**: admin@rewear.com
-- **Password**: admin123456
+- **Password**: password1
 - **Role**: Admin
-- **Points**: 1000
 
 ### Test User
-- **Email**: user@rewear.com
-- **Password**: user123456
+- **Email**: yash@2004.com
+- **Password**: yash@2004
 - **Role**: Regular User
-- **Points**: 250
+- **Points**: 100
 
 ## Environment Variables
 
@@ -207,7 +206,6 @@ RATE_LIMIT_MAX_REQUESTS=100
 
 - **Password Hashing**: bcryptjs with salt rounds
 - **JWT Authentication**: Secure token-based auth
-- **Rate Limiting**: Prevents abuse
 - **CORS Protection**: Configured for frontend
 - **Input Validation**: All inputs validated
 - **Helmet**: Security headers
